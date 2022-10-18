@@ -5,7 +5,23 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    letterSpacing:{
+      tightest: "-.075em",
+      tighter: "-.05em",
+      tight: "-.025em",
+      normal: "0",
+      wide: ".025em",
+      wider: ".05em",
+      widest: ".1em",
+      // widest: ".25em",
+    },
+    extend: {
+      fontFamily: {
+        neue: ["Bebas Neue", "sans-serif"],
+        kaushan: ["Kaushan Script", "Cursive"],
+        inter: ["Inter", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
