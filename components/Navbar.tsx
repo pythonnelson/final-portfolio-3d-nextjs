@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-20 p-4 fixed z-[100] font-neue">
       <div className="flex items-center justify-between w-full h-full px-2 text-2xl">
-        <span>@Nelson</span>
+        <span className="ml-20">@Nelson</span>
         <div>
             <ul className="hidden md:flex">
                 <Link href="/">

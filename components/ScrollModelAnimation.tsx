@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import gsap from "gsap";
 import { DivContainer, DivSpinner } from "./ScrollPage";
-// import { loadGLTFModel } from "../lib/model";
+import { loadGLTFModel } from "../lib/model";
 
 
 
@@ -40,12 +40,12 @@ const ScrollModelAnimation = () => {
 
       //Object
 
-      // loadGLTFModel(scene, "/Desktop.glb", {
-      //   receiveShadow: true,
-      //   castShadow: true,
-      // }).then(() => {
-      //   setLoading(false);
-      // });
+      loadGLTFModel(scene, "/Desktop.glb", {
+        receiveShadow: true,
+        castShadow: true,
+      }).then(() => {
+        setLoading(false);
+      });
 
       const objectDistance = 4;
       const mesh1 = new THREE.Mesh(
@@ -75,7 +75,7 @@ const ScrollModelAnimation = () => {
       const mesh5 = new THREE.Mesh(
         new THREE.SphereGeometry(1),
         new THREE.MeshStandardMaterial({
-          color: "red",
+          color: "blue",
           wireframe: true,
         })
       );
